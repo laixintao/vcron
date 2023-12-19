@@ -2,7 +2,7 @@
 
 TUI crontab editor.
 
-![](vcron.png)
+![](./docs/assets/vcron.png)
 
 ## Installation and Usage
 
