@@ -130,7 +130,8 @@ class VCron(App):
                         duration_text = f"in {str(duration)} from now."
                     last_run = run_time
                     text.append(
-                        f'{run_time.strftime("%Y-%m-%d %H:%M:%S")} [grey42]{duration_text}[/grey42]'
+                        f'{run_time.strftime("%Y-%m-%d %H:%M:%S")} '
+                        f"[grey42]{duration_text}[/grey42]"
                     )
                 future_static.update("\n".join(text))
             except CroniterBadCronError as e:
