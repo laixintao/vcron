@@ -101,7 +101,7 @@ class VCron(App):
     def handle_input_changed(self, event):
         input_text = event.value
         logger.info(
-            "input chagned: %s, %r", input_text, event.validation_result
+            "input changed: %s, %r", input_text, event.validation_result
         )
         self.crontab_input = input_text
 
