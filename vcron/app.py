@@ -8,7 +8,7 @@ from textual.app import App, ComposeResult
 from textual.widgets import Input
 
 from textual.containers import Center, Container, Horizontal, VerticalScroll
-from textual.widgets import DirectoryTree, Footer, Header, Static
+from textual.widgets import Footer, Header, Static
 from cron_descriptor import (
     FormatException,
     get_description,
@@ -16,7 +16,7 @@ from cron_descriptor import (
     WrongArgumentException,
 )
 
-from textual.validation import Function, Number, ValidationResult, Validator
+from textual.validation import ValidationResult, Validator
 
 
 logger = logging.getLogger(__name__)
