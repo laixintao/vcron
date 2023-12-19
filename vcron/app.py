@@ -8,7 +8,7 @@ from textual.app import App, ComposeResult
 from textual.widgets import Input
 
 from textual.containers import Center, Container, Horizontal, VerticalScroll
-from textual.widgets import DirectoryTree, Footer, Header, Static
+from textual.widgets import Footer, Header, Static
 from cron_descriptor import (
     FormatException,
     get_description,
@@ -16,7 +16,7 @@ from cron_descriptor import (
     WrongArgumentException,
 )
 
-from textual.validation import Function, Number, ValidationResult, Validator
+from textual.validation import ValidationResult, Validator
 
 
 logger = logging.getLogger(__name__)
@@ -101,7 +101,7 @@ class VCron(App):
     def handle_input_changed(self, event):
         input_text = event.value
         logger.info(
-            "input chagned: %s, %r", input_text, event.validation_result
+            "input changed: %s, %r", input_text, event.validation_result
         )
         self.crontab_input = input_text
 
@@ -130,7 +130,8 @@ class VCron(App):
                         duration_text = f"in {str(duration)} from now."
                     last_run = run_time
                     text.append(
-                        f'{run_time.strftime("%Y-%m-%d %H:%M:%S")} [grey42]{duration_text}[/grey42]'
+                        f'{run_time.strftime("%Y-%m-%d %H:%M:%S")} '
+                        f"[grey42]{duration_text}[/grey42]"
                     )
                 future_static.update("\n".join(text))
             except CroniterBadCronError as e:
