@@ -2,6 +2,8 @@
 
 TUI crontab editor.
 
+![](vcron.png)
+
 ## Installation and Usage
 
 Install via pip or ([pipx](https://github.com/pypa/pipx)):
