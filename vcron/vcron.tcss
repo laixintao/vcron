@@ -1,0 +1,36 @@
+#crontab-explain {
+    content-align: center middle;
+    min-height: 3;
+    padding: 1;
+}
+
+.error {
+    color: red;
+}
+
+#crontab-input-container {
+    width: 25;
+    height: 3;
+}
+
+#crontab-future-container {
+    padding: 1;
+    height: 70%;
+    width: 60;
+}
+
+#crontab-future-container {
+    border-title-align: center;
+}
+
+#part-hint-container {
+    height: 1;
+    width: 50;
+    margin-top: 1;
+    color: yellow;
+}
+#part-hint-container Static {
+    width: auto;
+    margin-right: 2;
+    text-style: underline;
+}
