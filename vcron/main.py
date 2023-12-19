@@ -50,7 +50,7 @@ def print_version(ctx, _, value):
     ctx.exit()
 
 
-@click.command()
+@click.command(help="Interactive TUI Crontab Editor")
 @click.option(
     "-v",
     "--verbose",
